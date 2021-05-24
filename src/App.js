@@ -24,18 +24,16 @@ const App = () => {
 
   let searchField = (event)=> {
     setSearch(event.target.value);
-    const filteredArray = game.filter((data)=> {
-      return data.Topic.toLowerCase().includes(search.toLowerCase());
-    });
-    setGame(filteredArray);
   }
+  const filteredArray = game.filter((data)=> {
+    return data.Topic.toLowerCase().includes(search.toLowerCase());
+  });
 
   return (
-
     <div className="tc">
       <h1 className='f1'>9IJAKIDS GAME LIST</h1>
       <SearchBar searchChange={searchField}/>
-      <CardList data={game}/>
+      <CardList data={filteredArray}/>
     </div>
   );
 }

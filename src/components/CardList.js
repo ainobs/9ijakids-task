@@ -7,7 +7,7 @@ const CardList = ({ data }) => {
         <div>
             {
                 data.map((card, i) => {
-                   return  <Card key={i} img={card.GamImage} title={ card.GameTitle } desc={ card.GameDescription } />
+                   return  <Card key={i} img={card.GameImage} title={ card.GameTitle } desc={ card.GameDescription } />
                 })
             }
         </div>
