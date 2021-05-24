@@ -19,21 +19,23 @@ const App = () => {
   //         setCard(data);
   //       })
   // }, [])
+  const [game, setGame] = useState(data);
   const [search, setSearch] = useState('');
 
-  let searchField = (e)=> {
-    console.log(e.target.value)
-    const filteredArray = data.filter((data)=> {
-      return data.Topic.toLowerCase().includes(e.target.value);
-    })
-    setSearch(filteredArray);
+  let searchField = (event)=> {
+    setSearch(event.target.value);
+    const filteredArray = game.filter((data)=> {
+      return data.Topic.toLowerCase().includes(search.toLowerCase());
+    });
+    setGame(filteredArray);
   }
 
   return (
+
     <div className="tc">
-      <h1>9ijakids Game List</h1>
-      <SearchBar search={search} searchChange={searchField}/>
-      <CardList data={data}/>
+      <h1 className='f1'>9IJAKIDS GAME LIST</h1>
+      <SearchBar searchChange={searchField}/>
+      <CardList data={game}/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-const SearchBar = ({ searchChange, search }) => {
+const SearchBar = ({ searchChange }) => {
     return ( 
     <div className="pa2">
         <input 
