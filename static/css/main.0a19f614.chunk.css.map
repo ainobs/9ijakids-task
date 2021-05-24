@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css","webpack://src/components/Card.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,SACF,CAEA,EACE,qBACF,CCPA,IACI,WAAY,CACZ,YACJ","file":"main.0a19f614.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0\n}\n\n* {\n  box-sizing: border-box;\n}\n","img {\r\n    width: 200px;\r\n    height: 200px\r\n}"]}
