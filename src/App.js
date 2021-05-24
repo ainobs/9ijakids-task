@@ -6,10 +6,12 @@ import { data } from './data';
 
 const App = () => {
 
+  // THE API WAS STILL NOT ACCESIBLE.............//
+
+
   //const [card, setCard] = useState(null);
   
   // useEffect(() => {
-  //   console.log('test');
   //   fetch('https://afternoon-ridge-35420.herokuapp.com/partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter')
   //       .then(res => {
   //          res.json();
@@ -28,6 +30,7 @@ const App = () => {
   const filteredArray = game.filter((data)=> {
     return data.Topic.toLowerCase().includes(search.toLowerCase());
   });
+
 
   return (
     <div className="tc">
